@@ -6,7 +6,7 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({});
     const [token, setToken] = useState("");
-    const url = "http://localhost:4000";
+    const url = "https://fooddel-backend-4d76.onrender.com/";
     const [food_list, setFoodList] = useState([]);
 
     // Load cart items from localStorage when the component mounts
