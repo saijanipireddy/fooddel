@@ -4,11 +4,11 @@ import axios from 'axios'
 import { toast } from 'react-toastify';
 
 const List = () => {
-  const url="https://fooddel-backend-4d76.onrender.com/";
+  const url="https://fooddel-1-iiv1.onrender.com/";
   const [list,setList] = useState([]);
 
   const fetchList = async () => {
-    const response = await axios.get("https://fooddel-backend-4d76.onrender.com/api/food/list");
+    const response = await axios.get("https://fooddel-1-iiv1.onrender.com/api/food/list");
     console.log(response.data)
     if (response.data.success) {
       setList(response.data.data);
