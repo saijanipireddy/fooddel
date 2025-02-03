@@ -24,7 +24,7 @@ const LoginPopup = ({setShowLogin}) => {
       event.preventDefault(); // Prevent default form submission
     
       try {
-        const endpoint = currentState === "Login" ? "http://localhost:4000/api/user/login" : "http://localhost:4000/api/user/register";
+        const endpoint = currentState === "Login" ? "https://fooddel-backend-4d76.onrender.com/api/user/login" : "https://fooddel-backend-4d76.onrender.com/api/user/register";
         const response = await axios.post(endpoint, data);
     
         if (response.data.success) {
