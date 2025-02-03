@@ -25,7 +25,9 @@ app.get('/', (req,res) => {
     res.send('API IS WORKING FINE')
 })
 
-
+app.get('/all',(req,res) => {
+    res.send('Hi Naga sai Kumar')
+}
 //api endpoints 
 
 app.use('/api/food', foodRouter)
