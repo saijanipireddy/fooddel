@@ -10,7 +10,7 @@ import bcrypt from 'bcryptjs';
 //app config 
 
 const app = express()
-const port = "https://fooddel-backend-4d76.onrender.com/"
+const port = process.env.PORT || 4000
 
 // middleware 
 
