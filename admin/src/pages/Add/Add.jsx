@@ -28,7 +28,7 @@ const Add = () => {
     formData.append("category", data.category)
     formData.append("image", image)
 
-    const response = await axios.post("https://fooddel-backend-4d76.onrender.com/api/food/add", formData)
+    const response = await axios.post("https://fooddel-1-iiv1.onrender.com/api/food/add", formData)
     if (response.data.success) {
       setData({
         name: "",
