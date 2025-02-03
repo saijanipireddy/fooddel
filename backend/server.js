@@ -27,7 +27,7 @@ app.get('/', (req,res) => {
 
 app.get('/all',(req,res) => {
     res.send('Hi Naga sai Kumar')
-}
+})
 //api endpoints 
 
 app.use('/api/food', foodRouter)
