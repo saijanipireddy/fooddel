@@ -14,6 +14,7 @@ const app = express()
 const port = process.env.PORT || 4000
 
 // middleware 
+dotenv.config();
 
 app.use(express.json())
 app.use(cors({ origin: 'https://fooddel-frontend-50kw.onrender.com/' }))
