@@ -1,5 +1,9 @@
 import jwt from 'jsonwebtoken';
 
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 const authMiddleware = async (req,res,next) => {
   const {token} = req.headers;
 
@@ -7,7 +11,7 @@ const authMiddleware = async (req,res,next) => {
     return res.json({success: false, message: "Not Authozied Login Again"})
   }
   try {
-    const token_decode = jwt.verify(token, 'secretKey');
+    const token_decode = jwt.verify(token, process.env.SECRET_KEY);
     req.body.userId = token_decode.id;
     next();
   }
